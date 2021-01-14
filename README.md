@@ -50,6 +50,12 @@ There are a few ways to install make. This will focus on the powershell.
 3. Use choco to install [make](https://chocolatey.org/packages/make)
 4. If VS Code was open, close and re-open it.
 
+### ST-Link
+
+1. Download and install the latest [STSW-LINK007](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link007.html).
+2. Plugin the ST-Link V2 adapter and run the software.
+3. Upgrad the firmware if needed.
+
 ## About
 
 This section provides some key info about whats in the repo.
