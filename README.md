@@ -17,7 +17,7 @@ These are the prerequisites to in order to compile and flash the MCU. You must i
 
 1. Download the latest version of [openocd](https://gnutoolchains.com/arm-eabi/openocd/)
 and exract to "C:\embedded". If the directory doesnt already exist, create it.
-2. Add "C:\embedded\<OpenOCD-Version>\bin" to the Path enviromental variable.
+2. Add "C:\embedded\\\<OpenOCD-Version>\bin" to the Path enviromental variable.
 3. Run the command ```openocd --version``` in the terminal to confirm everything is working.
 
 ### ARM GCC
@@ -30,7 +30,7 @@ and exract to "C:\embedded". If the directory doesnt already exist, create it.
 ### VS Code Setup
 
 1. Download and install [VS Code](https://code.visualstudio.com/download).
-2. Once uinstalled, click on plugins icon (looks like some blocks on the right).
+2. Once installed, click on plugins icon (looks like some blocks on the right).
 3. Install the "C/C++" plugin.
 4. Install the "Cortex-Debug" plugin. This plugin is how you will debug your MCU.
 
@@ -73,6 +73,7 @@ This file configures the compiler and IntelliSense. This is the magic of VS code
 
 * The last few entries of the define are important and are taken from the makefile.
 * The compiler is arm-eabi-none-gcc and the args are also taken from the makefile. The F1 is an M3 Cortex.
+* Include Path is set to recursively searh for all headers. Sometimes VS Code will fail to find those headers. You may need to explicitly add them. If so, copy the "C_Includes" into the "IncludePath" and strip out the "-D". You may need to re-load VS Code sometimes.
 
 #### [launch](https://code.visualstudio.com/docs/editor/debugging)
 
